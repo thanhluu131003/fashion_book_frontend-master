@@ -29,7 +29,7 @@ class HomeContainer extends React.Component {
     
     render() {
         const {category, publisher, book, totalpage} = this.props
-        if(category !== null && publisher !== null && book !== null && totalpage !== null) {
+        // if(category !== null && publisher !== null && book !== null && totalpage !== null) {
             return (
                 <div>
                     <Home
@@ -60,12 +60,12 @@ class HomeContainer extends React.Component {
                     />
                 </div>
             )
-        }
-        else {
-            return (
-                <Loading/>
-            )
-        }
+        // }
+        // else {
+        //     return (
+        //         <Loading/>
+        //     )
+        // }
     }
 }
 const mapStateToProps = state => ({

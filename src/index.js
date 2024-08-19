@@ -9,9 +9,9 @@ import thunk from 'redux-thunk'
 import reducers from './reducers'
 const middleware = [ thunk ];
     
-if (process.env.NODE_ENV !== 'production') {
-  middleware.push(createLogger());
-}
+// if (process.env.NODE_ENV !== 'production') {
+//   middleware.push(createLogger());
+// }
 
 let store = createStore(
     reducers,
